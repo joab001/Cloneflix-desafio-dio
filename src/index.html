@@ -1,38 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NETFLIX CLONE</title>
-    <link rel="stylesheet" href="../style/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../style/main.css" />
+
+    <!-- responsividade -->
+    <link rel="stylesheet" href="../style/responsive.css" />
+    <!-- owl css  -->
+
+    <link rel="stylesheet" href="../style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="../style/owl/owl.theme.default.min.css" />
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <h2 class="logo">NETFLIX</h2>
-            <nav>
-                <a href="#">INICIO</a>
-                <a href="#">SÉRIES</a>
-                <a href="#">FILMES</a>
-                <a href="#">DOCUMENTARIOS</a>
-            </nav>
-        </div>
+      <div class="container">
+        <h2 class="logo">NETFLIX</h2>
+        <nav>
+          <a href="#">INICIO</a>
+          <a href="#">SÉRIES</a>
+          <a href="#">FILMES</a>
+          <a href="#">DOCUMENTARIOS</a>
+        </nav>
+      </div>
     </header>
     <main>
-        <div class="filme-principal">
-            <div class="container">
-                <h3 class="titulo">Animais Fantásticos: Os Segredos de Dumbledore</h3>
-                <P class="descricao">
-                    O professor Alvo Dumbledore sabe que o poderoso mago das trevas Gellert Grindelwald está se movimentando para assumir o controle do mundo mágico. 
-                </P>
-            </div>
-        
-            <div class="botoes">
-                <button class="botao">assistir agora</button>
-                <button class="botao">saber mais</button>
-            </div>
+      <div class="filme-principal">
+        <div class="container">
+          <h3 class="titulo">Animais Fantásticos: Os Segredos de Dumbledore</h3>
+          <p class="descricao">
+            O professor Alvo Dumbledore sabe que o poderoso mago das trevas
+            Gellert Grindelwald está se movimentando para assumir o controle do
+            mundo mágico.
+          </p>
         </div>
+
+        <div class="botoes">
+          <button class="botao">
+            <i class="fa-solid fa-play"></i>
+            assistir agora
+          </button>
+          <button class="botao">
+            <i class="fa-solid fa-circle-info"></i>
+            saber mais
+          </button>
+        </div>
+      </div>
     </main>
-</body>
+
+    <div class="carrocel-filmes">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img class="box-filme" src="../img/mini_01.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="../img/mini_02.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="../img/mini_03.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="../img/mini_04.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="../img/mini_05.jpg" alt="" />
+        </div>
+        <div class="item">
+          <img class="box-filme" src="../img/mini_06.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/31d0450ae6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/owl/jquery.min.js"></script>
+    <script src="../js/owl/owl.carousel.min.js"></script>
+    <script src="../js/setup.js"></script>
+  </body>
 </html>
